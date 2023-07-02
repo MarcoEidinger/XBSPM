@@ -79,6 +79,7 @@
 				8ADE2AD72A51C7A3003F87DE /* Sources */,
 				8ADE2AD82A51C7A3003F87DE /* Frameworks */,
 				8ADE2AD92A51C7A3003F87DE /* Resources */,
+				8AF83DAE2A51D64C00EB2E5E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -139,6 +140,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AF83DAE2A51D64C00EB2E5E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\ntouch ~/.netrc\n\necho \"machine rbsc.repositories.cloud.sap\" > ~/.netrc\necho \"login sap-d041771\" >> ~/.netrc \necho \"password ${SDK_TOKEN}\" >> ~/.netrc\n\necho \"machine rbsc.repositories.sap.ondemand.com\" > ~/.netrc\necho \"login sap-d041771\" >> ~/.netrc \necho \"password ${SDK_TOKEN}\" >> ~/.netrc\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8ADE2AD72A51C7A3003F87DE /* Sources */ = {
@@ -273,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"XBSPM/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_PREVIEWS = YES;
@@ -302,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"XBSPM/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_PREVIEWS = YES;
