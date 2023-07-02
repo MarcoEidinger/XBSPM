@@ -157,7 +157,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\ntouch ~/.netrc\n\necho \"machine rbsc.repositories.cloud.sap\" > ~/.netrc\necho \"login sap-d041771\" >> ~/.netrc \necho \"password ${SDK_TOKEN}\" >> ~/.netrc\n\necho \"machine rbsc.repositories.sap.ondemand.com\" > ~/.netrc\necho \"login sap-d041771\" >> ~/.netrc \necho \"password ${SDK_TOKEN}\" >> ~/.netrc\n";
+			shellScript = "#!/bin/bash\n\ntouch ~/.netrc\n\necho \"machine rbsc.repositories.cloud.sap\" > ~/.netrc\necho \"login sap-d041771\" >> ~/.netrc \necho \"password ${SDK_TOKEN}\" >> ~/.netrc\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
