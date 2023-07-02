@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "cloud-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:SAP/cloud-sdk-ios.git",
+      "state" : {
+        "revision" : "58f338a069b69980d6883494712061abd072a1de",
+        "version" : "9.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}
